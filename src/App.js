@@ -8,6 +8,10 @@ import {
   Possibility,
   WhatGpt3,
 } from "./container/Container";
+import './App.css'
+
+
+
 
 
 export default function App() {
