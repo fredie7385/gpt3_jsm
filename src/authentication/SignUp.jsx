@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { Box, Button, Modal, TextField, Typography } from "@mui/material";
-import { GoogleAuthProvider, FacebookAuthProvider } from "firebase/auth"; 
+ 
 
 export default function SignUp() {
   const [open, setOpen] = useState(false);
-
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
@@ -38,13 +37,14 @@ export default function SignUp() {
             <Typography variant="h5" align="center" marginBottom={3}>
               Sign Up
             </Typography>
-            <TextField fullWidth label="Name" margin="normal" />
-            <TextField fullWidth label="Email" type="email" margin="normal" />
+            <TextField fullWidth label="Name" margin="normal" required/>
+            <TextField fullWidth label="Email" type="email" margin="normal" required />
             <TextField
               fullWidth
               label="Password"
               type="password"
               margin="normal"
+              required
             />
             <Button
               variant="contained"
