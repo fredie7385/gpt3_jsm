@@ -9,7 +9,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Button onClick={handleOpen}>Sign Up</Button>
+      <Button onClick={handleOpen}>SignUp</Button>
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{

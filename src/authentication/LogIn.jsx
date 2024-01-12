@@ -9,7 +9,7 @@ export default function Login() {
 
   return (
     <>
-      <Button onClick={handleOpen}>Login</Button>
+       <Button onClick={handleOpen} sx={{marginRight:'0.5rem'}}>Login</Button>
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{

@@ -8,30 +8,25 @@ import {
   Possibility,
   WhatGpt3,
 } from "./container/Container";
-import './App.css';
-import SignUp from  './authentication/SignUp.jsx';
+import "./App.css";
+import SignUp from "./authentication/SignUp.jsx";
 
-import Login from './authentication/LogIn.jsx'
-
-
-
+import Login from "./authentication/LogIn.jsx";
 
 export default function App() {
   return (
-    < div className="App">
-      {/* <div className="gradient__bg">
+    <div className="App">
+      <div className="gradient__bg">
         <Navbar />
         <Header />
-      </div> */}
-      {/* <Brand />
+      </div>
+      <Brand />
       <WhatGpt3 />
       <Features />
       <Possibility />
       <Cta />
       <Blog />
-      <Footer /> */}
-      <Login/>
-      <SignUp/>.
+      <Footer /> 
     </div>
   );
 }
