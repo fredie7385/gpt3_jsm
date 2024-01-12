@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Box, Button, Modal, TextField, Typography } from "@mui/material";
+import { Box, Button, Link, Modal, TextField, Typography } from "@mui/material";
 
 export default function Login() {
   const [open, setOpen] = useState(false);
@@ -9,7 +9,18 @@ export default function Login() {
 
   return (
     <>
-       <Button onClick={handleOpen} sx={{marginRight:'0.5rem'}}>Login</Button>
+      <Link
+        onClick={handleOpen}
+        sx={{
+          marginRight: "0.5rem",
+          textDecoration: "none",
+          color: "whitesmoke",
+          fontSize: "1.3rem",
+          cursor: "pointer",
+        }}
+      >
+        Login
+      </Link>
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{
@@ -18,7 +29,7 @@ export default function Login() {
             left: "50%",
             transform: "translate(-50%, -50%)",
             width: 400,
-            bgcolor: "background.paper",
+            bgcolor: "#e8eaf6",
             border: "2px solid #000",
             boxShadow: 24,
             p: 4,
@@ -36,7 +47,13 @@ export default function Login() {
             <Typography variant="h5" align="center">
               Login
             </Typography>
-            <TextField label="Email" type="email" fullWidth margin="normal" required />
+            <TextField
+              label="Email"
+              type="email"
+              fullWidth
+              margin="normal"
+              required
+            />
             <TextField
               label="Password"
               type="password"
@@ -44,7 +61,7 @@ export default function Login() {
               margin="normal"
               required
             />
-            <Button variant="contained" type="submit" fullWidth>
+            <Button sx={{background: '#FF4820'}} variant="contained" type="submit" fullWidth>
               Login
             </Button>
           </Box>
