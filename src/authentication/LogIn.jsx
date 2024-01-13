@@ -32,6 +32,8 @@ export default function Login() {
             bgcolor: "#e8eaf6",
             border: "2px solid #000",
             boxShadow: 24,
+            borderEndEndRadius:'2rem',
+            borderStartStartRadius:'2rem',
             p: 4,
           }}
         >
