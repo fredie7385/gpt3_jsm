@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Box, Button, Modal, TextField, Typography } from "@mui/material";
- 
 
 export default function SignUp() {
   const [open, setOpen] = useState(false);
@@ -9,7 +8,7 @@ export default function SignUp() {
 
   return (
     <>
-      <Button onClick={handleOpen}>Sign Up</Button>
+      <Button onClick={handleOpen}>SignUp</Button>
       <Modal open={open} onClose={handleClose}>
         <Box
           sx={{
@@ -18,16 +17,17 @@ export default function SignUp() {
             left: "50%",
             transform: "translate(-50%, -50%)",
             width: 400,
-            bgcolor: "background.paper",
+            bgcolor: "#e8eaf6",
             border: "2px solid #000",
             boxShadow: 24,
+            borderEndEndRadius:'2rem',
+            borderStartStartRadius:'2rem',
             p: 4,
           }}
         >
           <Box
             component="form"
             sx={{
-              //   width: { xs: "90%", sm: "500px" },
               margin: "0 auto",
               padding: "20px",
               border: "1px solid #ccc",
@@ -37,8 +37,14 @@ export default function SignUp() {
             <Typography variant="h5" align="center" marginBottom={3}>
               Sign Up
             </Typography>
-            <TextField fullWidth label="Name" margin="normal" required/>
-            <TextField fullWidth label="Email" type="email" margin="normal" required />
+            <TextField fullWidth label="Name" margin="normal" required />
+            <TextField
+              fullWidth
+              label="Email"
+              type="email"
+              margin="normal"
+              required
+            />
             <TextField
               fullWidth
               label="Password"
@@ -51,10 +57,11 @@ export default function SignUp() {
               type="submit"
               fullWidth
               onClick={handleClose}
+              sx={{background: '#FF4820'}}
             >
               Sign Up
             </Button>
-          </Box>          
+          </Box>
         </Box>
       </Modal>
     </>

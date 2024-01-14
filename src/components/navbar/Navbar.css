@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 2rem 6rem;
+    padding: 1rem 4rem;
 }
 
 .gpt3__navbar-links {
@@ -30,8 +30,13 @@
 .gpt3__navbar-sign {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: center;    
 }
+
+.gpt3__navbar-sign a {
+    margin-left: 2rem;
+}
+
 
 .gpt3__navbar-links_container p,
 .gpt3__navbar-sign p,
@@ -42,7 +47,6 @@
     font-size: 18px;
     line-height: 25px;
     text-transform: capitalize;
-
     margin: 0 1rem;
     cursor: pointer;
 }
