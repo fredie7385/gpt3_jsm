@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/images/logo.svg";
 import "./Navbar.css";
 import SignUp from "./../../authentication/SignUp.jsx";
 import Login from "./../../authentication/LogIn.jsx";
+
+
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [openSignUp, setOpenSignUp] = useState(false);
