@@ -1,5 +1,5 @@
 import React from "react";
-import { Article, Brand, Cta, Navbar } from "./components/Components";
+import {Brand, Cta, Navbar } from "./components/Components";
 import {
   Blog,
   Features,
@@ -9,10 +9,6 @@ import {
   WhatGpt3,
 } from "./container/Container";
 import "./App.css";
-import SignUp from "./authentication/SignUp.jsx";
-
-import Login from "./authentication/LogIn.jsx";
-
 export default function App() {
   return (
     <div className="App">
@@ -20,7 +16,7 @@ export default function App() {
         <Navbar />
         <Header />
       </div>
-      <Brand />
+      <Brand/>
       <WhatGpt3 />
       <Features />
       <Possibility />
