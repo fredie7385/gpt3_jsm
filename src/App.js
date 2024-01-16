@@ -1,5 +1,5 @@
 import React from "react";
-import {Brand, Cta, Navbar } from "./components/Components";
+import { Brand, Cta, Navbar } from "./components/Components";
 import {
   Blog,
   Features,
@@ -16,13 +16,13 @@ export default function App() {
         <Navbar />
         <Header />
       </div>
-      <Brand/>
+      <Brand />
       <WhatGpt3 />
       <Features />
       <Possibility />
       <Cta />
       <Blog />
-      <Footer /> 
+      <Footer />
     </div>
   );
 }
